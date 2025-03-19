@@ -391,18 +391,21 @@ class AutoInfo(QtWidgets.QWidget):
             self.save_tasks_to_json()
 
     def play_error_sound(self):
-        if str_to_bool(read_key_value('error_sound')):
-            try:
-                selected_audio_index = int(read_key_value('selected_audio_index'))
-            except Exception:
-                selected_audio_index = 0
-            if selected_audio_index in self.audio_files:
-                self.selected_audio_file = self.audio_files[selected_audio_index]
-            else:
-                log("ERROR", f"音频播放失败{selected_audio_index}")
-                return
-            self.error_sound_thread.update_sound_file(self.selected_audio_file)
-            self.error_sound_thread.start()
+        try:
+            if str_to_bool(read_key_value('error_sound')):
+                try:
+                    selected_audio_index = int(read_key_value('selected_audio_index'))
+                except Exception:
+                    selected_audio_index = 0
+                if selected_audio_index in self.audio_files:
+                    self.selected_audio_file = self.audio_files[selected_audio_index]
+                else:
+                    log("ERROR", f"音频播放失败{selected_audio_index}")
+                    return
+                self.error_sound_thread.update_sound_file(self.selected_audio_file)
+                self.error_sound_thread.start()
+        except Exception:
+            pass
 
     def send_error_email(self, task):
         if str_to_bool(read_key_value('error_email')):
