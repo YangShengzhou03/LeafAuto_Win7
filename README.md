@@ -1,6 +1,6 @@
 # LeafAuto_Win7 项目开发文档
 
-**最后更新：2025年3月3日**
+**最后更新：2025年3月19日**
 
 ---
 
@@ -34,16 +34,47 @@
 
 ### 核心技术
 
-- **Python**: 版本 3.11  
+| 库 | 当前版本 | 最新版本 |
+| --- | --- | --- |
+| Pillow | 9.5.0 | 11.1.0 |
+| PyQt5 | 5.15.10 | 6.4.2 |
+| PyQt5-Qt5 | 5.15.2 | - |
+| PyQt5-sip | 12.13.0 | 12.17.0 |
+| WMI | 1.5.1 | 1.5.1 |
+| beautifulsoup4 | 4.13.3 | 4.13.3 |
+| certifi | 2025.1.31 | 2025.1.31 |
+| charset-normalizer | 3.4.1 | - |
+| comtypes | 1.4.6 | 1.4.10 |
+| idna | 3.10 | - |
+| importlib-metadata | 6.7.0 | 8.6.1 |
+| packaging | 24.0 | - |
+| pefile | 2024.8.26 | - |
+| pip | 24.0 | - |
+| psutil | 7.0.0 | 7.0.0 |
+| pyinstaller | 5.13.2 | 6.12.0 |
+| pyinstaller-hooks-contrib | 2024.7 | - |
+| pyperclip | 1.9.0 | - |
+| pywin32 | 308 | 310 |
+| pywin32-ctypes | 0.2.3 | - |
+| requests | 2.31.0 | 2.32.3 |
+| setuptools | 68.0.0 | 76.1.0 |
+| soupsieve | 2.4.1 | 2.6 |
+| typing-extensions | 4.7.1 | 4.12.2 |
+| urllib3 | 2.0.7 | - |
+| wheel | 0.41.2 | 0.45.1 |
+| wxauto | 3.9.11.17.5 | 3.9.11.17.5 |
+| zipp | 3.15.0 | - |
+
+- **Python**: 版本 3.7.4  
   - 作为主要编程语言，用于开发整个应用程序。
   
-- **PyQt5**: 版本 6.4.2  
+- **PyQt5**: 版本 5.15.10  
   - 用于创建图形用户界面的强大框架。
   
-- **PyInstaller**: 版本 5.6.2  
+- **PyInstaller**: 版本 5.13.2  
   - 打包工具，用于生成可执行文件。
   
-- **requests**: 版本 2.32.3  
+- **requests**: 版本 2.31.0  
   - HTTP 请求库，用于与外部 API 进行通信。
   
 - **pywin32**: 版本 308  
@@ -181,32 +212,34 @@
 
 以下列出了项目所需的所有依赖库及其版本号：
 
-- **PyQt5**: 6.4.2
-- **requests**: 2.32.3
-- **pywin32**: 308
-- **beautifulsoup4**: 4.12.3
-- **certifi**: 2024.8.30
-- **charset-normalizer**: 3.4.0
-- **click**: 8.1.7
-- **colorama**: 0.4.6
-- **comtypes**: 1.4.8
+- **Pillow**: 9.5.0
+- **PyQt5**: 5.15.10
+- **PyQt5-Qt5**: 5.15.2
+- **PyQt5-sip**: 12.13.0
+- **WMI**: 1.5.1
+- **beautifulsoup4**: 4.13.3
+- **certifi**: 2025.1.31
+- **charset-normalizer**: 3.4.1
+- **comtypes**: 1.4.6
 - **idna**: 3.10
-- **packaging**: 24.1
+- **importlib-metadata**: 6.7.0
+- **packaging**: 24.0
 - **pefile**: 2024.8.26
-- **pillow**: 11.0.0
-- **psutil**: 6.1.0
-- **pyinstaller**: 5.6.2
+- **pip**: 24.0
+- **psutil**: 7.0.0
+- **pyinstaller**: 5.13.2
+- **pyinstaller-hooks-contrib**: 2024.7
 - **pyperclip**: 1.9.0
-- **python-dotenv**: 1.0.1
+- **pywin32**: 308
 - **pywin32-ctypes**: 0.2.3
-- **qt6-applications**: 6.4.3.2.3
-- **qt6-tools**: 6.4.3.1.3
-- **setuptools**: 75.3.0
-- **soupsieve**: 2.6
-- **typing_extensions**: 4.12.2
-- **urllib3**: 2.2.3
-- **wheel**: 0.44.0
+- **requests**: 2.31.0
+- **setuptools**: 68.0.0
+- **soupsieve**: 2.4.1
+- **typing-extensions**: 4.7.1
+- **urllib3**: 2.0.7
+- **wheel**: 0.41.2
 - **wxauto**: 3.9.11.17.5
+- **zipp**: 3.15.0
 
 ---
 
@@ -214,7 +247,9 @@
 
 ### 安装依赖库
 
-首先，确保您已经安装了 Python 3.11 或更高版本。然后，使用以下命令安装项目的依赖库：
+首先，确保您已经安装了 Python 3.7.4。然后，使用以下命令安装项目的依赖库：
 
 ```bash
-  pyinstaller Application.spec
+pip install -r requirements.txt
+
+pyinstaller Application.spec
