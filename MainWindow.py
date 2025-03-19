@@ -256,6 +256,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.label_66.setText("6%")
             self.checkBox_Ai.setEnabled(False)
             self.checkBox_stopSleep.setEnabled(False)
+            self.checkBox_period.setChecked(True)
+            self.checkBox_comma.setChecked(True)
+            self.checkBox_Space.setChecked(True)
         elif membership == 'Base':
             small_member_image = get_resource_path('resources/img/小标/小标-标准会员版本.svg')
             member_image = get_resource_path('resources/img/头标/头标-银色标准会员.svg')
