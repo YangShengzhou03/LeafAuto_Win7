@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1176, 677)
+        MainWindow.resize(1271, 736)
         MainWindow.setStyleSheet("")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
         self.main_Frame.setStyleSheet("QFrame#main_Frame{\n"
 "background-color: qlineargradient(x0:0, y0:1, x1:1, y1:1,stop:0.4  rgb(107, 128, 210), stop:1 rgb(180, 140, 255));\n"
 "border:0px solid red;\n"
-"border-radius:18px\n"
+"border-radius:30px\n"
 "}")
         self.main_Frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.main_Frame.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -36,12 +36,12 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setSpacing(0)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.left = QtWidgets.QFrame(self.main_Frame)
-        self.left.setMinimumSize(QtCore.QSize(0, 0))
-        self.left.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.left.setMinimumSize(QtCore.QSize(219, 0))
+        self.left.setMaximumSize(QtCore.QSize(219, 16777215))
         self.left.setStyleSheet("QFrame{\n"
 "background-color: rgba(255, 255, 255,0);\n"
 "border:0px solid red;\n"
-"border-radius:18px\n"
+"border-radius:30px\n"
 "}")
         self.left.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.left.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -98,7 +98,7 @@ class Ui_MainWindow(object):
         self.verticalLayout.addItem(spacerItem1)
         self.verticalLayout_2.addWidget(self.leafHead_frame)
         self.left_listWidget = QtWidgets.QListWidget(self.left)
-        self.left_listWidget.setMinimumSize(QtCore.QSize(199, 0))
+        self.left_listWidget.setMinimumSize(QtCore.QSize(180, 0))
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
         self.left_listWidget.setFont(font)
@@ -151,21 +151,21 @@ class Ui_MainWindow(object):
         self.right.setStyleSheet("QFrame{\n"
 "background-color: rgb(245, 249, 254);\n"
 "border:0px solid red;\n"
-"border-radius:18px\n"
+"border-radius:30px\n"
 "}")
         self.right.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.right.setFrameShadow(QtWidgets.QFrame.Raised)
         self.right.setObjectName("right")
         self.verticalLayout_30 = QtWidgets.QVBoxLayout(self.right)
-        self.verticalLayout_30.setContentsMargins(4, 4, 4, 9)
-        self.verticalLayout_30.setSpacing(0)
+        self.verticalLayout_30.setContentsMargins(48, 24, 48, 24)
+        self.verticalLayout_30.setSpacing(4)
         self.verticalLayout_30.setObjectName("verticalLayout_30")
         self.rightHead_frame = QtWidgets.QFrame(self.right)
         self.rightHead_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.rightHead_frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.rightHead_frame.setObjectName("rightHead_frame")
         self.horizontalLayout_33 = QtWidgets.QHBoxLayout(self.rightHead_frame)
-        self.horizontalLayout_33.setContentsMargins(9, 0, 9, 0)
+        self.horizontalLayout_33.setContentsMargins(9, 0, 0, 0)
         self.horizontalLayout_33.setSpacing(9)
         self.horizontalLayout_33.setObjectName("horizontalLayout_33")
         spacerItem2 = QtWidgets.QSpacerItem(761, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
@@ -318,7 +318,6 @@ class Ui_MainWindow(object):
         self.leafAuto_Title.setFont(font)
         self.leafAuto_Title.setStyleSheet("QLabel {\n"
 "    color: rgb(0, 0, 0);\n"
-"    padding-left:6px;\n"
 "}")
         self.leafAuto_Title.setObjectName("leafAuto_Title")
         self.verticalLayout_3.addWidget(self.leafAuto_Title)
@@ -326,8 +325,8 @@ class Ui_MainWindow(object):
         self.page_in.setSpacing(0)
         self.page_in.setObjectName("page_in")
         self.versionBlock_Layout = QtWidgets.QHBoxLayout()
-        self.versionBlock_Layout.setContentsMargins(6, 6, 6, 4)
-        self.versionBlock_Layout.setSpacing(6)
+        self.versionBlock_Layout.setContentsMargins(9, 16, 9, 16)
+        self.versionBlock_Layout.setSpacing(12)
         self.versionBlock_Layout.setObjectName("versionBlock_Layout")
         self.frame_top1 = QtWidgets.QFrame(self.leafAuto_Widget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
@@ -415,11 +414,11 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
         font.setPointSize(14)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setBold(False)
+        font.setWeight(50)
         self.label_5.setFont(font)
         self.label_5.setStyleSheet("color: rgb(255, 255, 255);\n"
-"padding-left:6px;")
+"padding-left:12px;")
         self.label_5.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_5.setObjectName("label_5")
         self.verticalLayout_6.addWidget(self.label_5, 0, QtCore.Qt.AlignBottom)
@@ -431,7 +430,7 @@ class Ui_MainWindow(object):
         font.setUnderline(False)
         self.label_6.setFont(font)
         self.label_6.setStyleSheet("color: rgb(255, 255, 255);\n"
-"padding-left:6px;")
+"padding-left:12px;")
         self.label_6.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_6.setObjectName("label_6")
         self.verticalLayout_6.addWidget(self.label_6, 0, QtCore.Qt.AlignTop)
@@ -519,11 +518,11 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
         font.setPointSize(14)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setBold(False)
+        font.setWeight(50)
         self.label_8.setFont(font)
         self.label_8.setStyleSheet("color: rgb(255, 255, 255);\n"
-"padding-left:6px;")
+"padding-left:12px;")
         self.label_8.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_8.setObjectName("label_8")
         self.verticalLayout_43.addWidget(self.label_8, 0, QtCore.Qt.AlignBottom)
@@ -535,7 +534,7 @@ class Ui_MainWindow(object):
         font.setUnderline(False)
         self.label_84.setFont(font)
         self.label_84.setStyleSheet("color: rgb(255, 255, 255);\n"
-"padding-left:6px;")
+"padding-left:12px;")
         self.label_84.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_84.setObjectName("label_84")
         self.verticalLayout_43.addWidget(self.label_84, 0, QtCore.Qt.AlignTop)
@@ -625,11 +624,11 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
         font.setPointSize(14)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setBold(False)
+        font.setWeight(50)
         self.label_85.setFont(font)
         self.label_85.setStyleSheet("color: rgb(255, 255, 255);\n"
-"padding-left:6px;")
+"padding-left:12px;")
         self.label_85.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_85.setObjectName("label_85")
         self.verticalLayout_45.addWidget(self.label_85, 0, QtCore.Qt.AlignBottom)
@@ -641,7 +640,7 @@ class Ui_MainWindow(object):
         font.setUnderline(False)
         self.label_86.setFont(font)
         self.label_86.setStyleSheet("color: rgb(255, 255, 255);\n"
-"padding-left:6px;")
+"padding-left:12px;")
         self.label_86.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_86.setObjectName("label_86")
         self.verticalLayout_45.addWidget(self.label_86, 0, QtCore.Qt.AlignTop)
@@ -730,11 +729,11 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
         font.setPointSize(14)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setBold(False)
+        font.setWeight(50)
         self.label_87.setFont(font)
         self.label_87.setStyleSheet("color: rgb(255, 255, 255);\n"
-"padding-left:6px;")
+"padding-left:12px;")
         self.label_87.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_87.setObjectName("label_87")
         self.verticalLayout_47.addWidget(self.label_87, 0, QtCore.Qt.AlignBottom)
@@ -746,7 +745,7 @@ class Ui_MainWindow(object):
         font.setUnderline(False)
         self.label_88.setFont(font)
         self.label_88.setStyleSheet("color: rgb(255, 255, 255);\n"
-"padding-left:6px;")
+"padding-left:12px;")
         self.label_88.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_88.setObjectName("label_88")
         self.verticalLayout_47.addWidget(self.label_88, 0, QtCore.Qt.AlignTop)
@@ -757,11 +756,11 @@ class Ui_MainWindow(object):
         self.versionBlock_Layout.addWidget(self.frame_top4)
         self.page_in.addLayout(self.versionBlock_Layout)
         self.centralSection_Layout = QtWidgets.QHBoxLayout()
-        self.centralSection_Layout.setContentsMargins(6, 4, 6, 4)
+        self.centralSection_Layout.setContentsMargins(9, 12, 9, 12)
         self.centralSection_Layout.setSpacing(12)
         self.centralSection_Layout.setObjectName("centralSection_Layout")
         self.instrument_frame = QtWidgets.QFrame(self.leafAuto_Widget)
-        self.instrument_frame.setMinimumSize(QtCore.QSize(0, 0))
+        self.instrument_frame.setMinimumSize(QtCore.QSize(236, 223))
         self.instrument_frame.setStyleSheet("QFrame{\n"
 "    background-color: rgb(12, 20, 36);\n"
 "border:0px solid red;\n"
@@ -785,7 +784,6 @@ class Ui_MainWindow(object):
         self.label_63.setObjectName("label_63")
         self.verticalLayout_33.addWidget(self.label_63)
         self.horizontalLayout_44 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_44.setSpacing(6)
         self.horizontalLayout_44.setObjectName("horizontalLayout_44")
         self.verticalLayout_34 = QtWidgets.QVBoxLayout()
         self.verticalLayout_34.setSpacing(0)
@@ -802,8 +800,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_34.addWidget(self.label_64)
         self.label_65 = QtWidgets.QLabel(self.instrument_frame)
         font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
+        font.setFamily("微软雅黑")
+        font.setPointSize(8)
         font.setBold(False)
         font.setWeight(50)
         self.label_65.setFont(font)
@@ -834,8 +832,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_35.addWidget(self.label_66)
         self.label_67 = QtWidgets.QLabel(self.instrument_frame)
         font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
+        font.setFamily("微软雅黑")
+        font.setPointSize(8)
         font.setBold(False)
         font.setWeight(50)
         self.label_67.setFont(font)
@@ -920,7 +918,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_33.addLayout(self.horizontalLayout_47)
         self.centralSection_Layout.addWidget(self.instrument_frame)
         self.ad_frame = QtWidgets.QFrame(self.leafAuto_Widget)
-        self.ad_frame.setMinimumSize(QtCore.QSize(0, 0))
+        self.ad_frame.setMinimumSize(QtCore.QSize(688, 0))
         self.ad_frame.setStyleSheet("QFrame{\n"
 "background-color: qradialgradient(cx:0, cy:0, radius:1,fx:0.1, fy:0.1,stop:0 rgb(94, 85, 217),stop:1 rgb(56, 47, 173));\n"
 "border:0px solid red;\n"
@@ -950,10 +948,10 @@ class Ui_MainWindow(object):
         self.bottom_frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.bottom_frame.setObjectName("bottom_frame")
         self.gridLayout = QtWidgets.QGridLayout(self.bottom_frame)
-        self.gridLayout.setContentsMargins(6, 6, 6, 6)
+        self.gridLayout.setContentsMargins(9, 6, 9, 6)
         self.gridLayout.setObjectName("gridLayout")
         self.inBottom_frame = QtWidgets.QFrame(self.bottom_frame)
-        self.inBottom_frame.setMinimumSize(QtCore.QSize(0, 0))
+        self.inBottom_frame.setMinimumSize(QtCore.QSize(936, 0))
         self.inBottom_frame.setStyleSheet("QFrame{\n"
 "    background-color: rgb(215, 187, 167);\n"
 "border:0px solid red;\n"
@@ -964,12 +962,11 @@ class Ui_MainWindow(object):
         self.inBottom_frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.inBottom_frame.setObjectName("inBottom_frame")
         self.horizontalLayout_49 = QtWidgets.QHBoxLayout(self.inBottom_frame)
-        self.horizontalLayout_49.setContentsMargins(12, 4, 2, 2)
+        self.horizontalLayout_49.setContentsMargins(12, 6, 2, 2)
         self.horizontalLayout_49.setSpacing(0)
         self.horizontalLayout_49.setObjectName("horizontalLayout_49")
         self.bottom_Layout = QtWidgets.QVBoxLayout()
-        self.bottom_Layout.setContentsMargins(9, -1, 9, 0)
-        self.bottom_Layout.setSpacing(6)
+        self.bottom_Layout.setContentsMargins(9, -1, 9, -1)
         self.bottom_Layout.setObjectName("bottom_Layout")
         self.Version_Layout = QtWidgets.QHBoxLayout()
         self.Version_Layout.setContentsMargins(0, 6, 0, 6)
@@ -1073,8 +1070,8 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
         font.setPointSize(14)
-        font.setBold(False)
-        font.setWeight(50)
+        font.setBold(True)
+        font.setWeight(75)
         self.label_75.setFont(font)
         self.label_75.setObjectName("label_75")
         self.verticalLayout_38.addWidget(self.label_75)
@@ -1083,7 +1080,7 @@ class Ui_MainWindow(object):
         self.label_76 = QtWidgets.QLabel(self.frame_101)
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
-        font.setPointSize(20)
+        font.setPointSize(24)
         font.setBold(False)
         font.setWeight(50)
         self.label_76.setFont(font)
@@ -1130,18 +1127,17 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
         font.setPointSize(14)
-        font.setBold(False)
-        font.setWeight(50)
+        font.setBold(True)
+        font.setWeight(75)
         self.label_77.setFont(font)
         self.label_77.setObjectName("label_77")
         self.verticalLayout_39.addWidget(self.label_77)
         self.horizontalLayout_51 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_51.setSpacing(7)
         self.horizontalLayout_51.setObjectName("horizontalLayout_51")
         self.label_78 = QtWidgets.QLabel(self.frame_104)
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
-        font.setPointSize(20)
+        font.setPointSize(24)
         font.setBold(False)
         font.setWeight(50)
         self.label_78.setFont(font)
@@ -1187,8 +1183,8 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
         font.setPointSize(14)
-        font.setBold(False)
-        font.setWeight(50)
+        font.setBold(True)
+        font.setWeight(75)
         self.label_79.setFont(font)
         self.label_79.setObjectName("label_79")
         self.verticalLayout_40.addWidget(self.label_79)
@@ -1197,7 +1193,7 @@ class Ui_MainWindow(object):
         self.label_80 = QtWidgets.QLabel(self.frame_107)
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
-        font.setPointSize(20)
+        font.setPointSize(24)
         font.setBold(False)
         font.setWeight(50)
         self.label_80.setFont(font)
@@ -1243,8 +1239,8 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
         font.setPointSize(14)
-        font.setBold(False)
-        font.setWeight(50)
+        font.setBold(True)
+        font.setWeight(75)
         self.label_81.setFont(font)
         self.label_81.setObjectName("label_81")
         self.verticalLayout_41.addWidget(self.label_81)
@@ -1253,7 +1249,7 @@ class Ui_MainWindow(object):
         self.label_82 = QtWidgets.QLabel(self.frame_110)
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
-        font.setPointSize(20)
+        font.setPointSize(24)
         font.setBold(False)
         font.setWeight(50)
         self.label_82.setFont(font)
@@ -1298,7 +1294,6 @@ class Ui_MainWindow(object):
         self.AUTO_Title.setFont(font)
         self.AUTO_Title.setStyleSheet("QLabel {\n"
 "    color: rgb(0, 0, 0);\n"
-"    padding-left:6px;\n"
 "}")
         self.AUTO_Title.setObjectName("AUTO_Title")
         self.verticalLayout_9.addWidget(self.AUTO_Title)
@@ -1307,7 +1302,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.DataInput)
         self.horizontalLayout_5.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
         self.horizontalLayout_5.setContentsMargins(0, 6, 0, 6)
-        self.horizontalLayout_5.setSpacing(4)
+        self.horizontalLayout_5.setSpacing(2)
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
         self.frame_36 = QtWidgets.QFrame(self.DataInput)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
@@ -1468,8 +1463,8 @@ class Ui_MainWindow(object):
         self.frame_45.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_45.setObjectName("frame_45")
         self.horizontalLayout_96 = QtWidgets.QHBoxLayout(self.frame_45)
-        self.horizontalLayout_96.setContentsMargins(9, 0, 4, 0)
-        self.horizontalLayout_96.setSpacing(4)
+        self.horizontalLayout_96.setContentsMargins(9, 0, 6, 0)
+        self.horizontalLayout_96.setSpacing(6)
         self.horizontalLayout_96.setObjectName("horizontalLayout_96")
         self.time_label_2 = QtWidgets.QLabel(self.frame_45)
         font = QtGui.QFont()
@@ -1487,8 +1482,8 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.dateTimeEdit.sizePolicy().hasHeightForWidth())
         self.dateTimeEdit.setSizePolicy(sizePolicy)
-        self.dateTimeEdit.setMinimumSize(QtCore.QSize(158, 0))
-        self.dateTimeEdit.setMaximumSize(QtCore.QSize(158, 16777215))
+        self.dateTimeEdit.setMinimumSize(QtCore.QSize(152, 0))
+        self.dateTimeEdit.setMaximumSize(QtCore.QSize(156, 16777215))
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
         font.setPointSize(-1)
@@ -1498,7 +1493,7 @@ class Ui_MainWindow(object):
 "    border: 1px solid rgb(87, 78, 209);\n"
 "    border-radius: 2px;\n"
 "    color: rgb(0, 0, 0);\n"
-"    font-size: 16px;\n"
+"    font-size: 15px;\n"
 "}\n"
 "\n"
 "QDateTimeEdit:hover {\n"
@@ -1535,7 +1530,7 @@ class Ui_MainWindow(object):
 "    border: 1px solid rgb(87, 78, 209);\n"
 "    border-radius: 2px;\n"
 "    color: rgb(0, 0, 0);\n"
-"    font-size: 16px;\n"
+"    font-size: 15px;\n"
 "    padding-right: 0;\n"
 "    text-align: center;\n"
 "    padding-left: 2px;\n"
@@ -1609,7 +1604,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_9.addWidget(self.DataInput)
         self.horizontalLayout_71 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_71.setContentsMargins(9, 6, 9, 6)
-        self.horizontalLayout_71.setSpacing(14)
+        self.horizontalLayout_71.setSpacing(9)
         self.horizontalLayout_71.setObjectName("horizontalLayout_71")
         self.scrollArea_3 = QtWidgets.QScrollArea(self.verticalWidget_2)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
@@ -1659,7 +1654,7 @@ class Ui_MainWindow(object):
         self.scrollArea_3.setAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignTop)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 368, 482))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 368, 502))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.formLayout_3 = QtWidgets.QFormLayout(self.scrollAreaWidgetContents_3)
         self.formLayout_3.setLabelAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
@@ -1697,7 +1692,7 @@ class Ui_MainWindow(object):
         self.label_113 = QtWidgets.QLabel(self.widget_64)
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
-        font.setPointSize(11)
+        font.setPointSize(12)
         font.setBold(False)
         font.setWeight(50)
         self.label_113.setFont(font)
@@ -1790,7 +1785,7 @@ class Ui_MainWindow(object):
         self.log_textEdit = QtWidgets.QTextEdit(self.frame_35)
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
-        font.setPointSize(11)
+        font.setPointSize(10)
         self.log_textEdit.setFont(font)
         self.log_textEdit.viewport().setProperty("cursor", QtGui.QCursor(QtCore.Qt.IBeamCursor))
         self.log_textEdit.setFocusPolicy(QtCore.Qt.NoFocus)
@@ -1945,7 +1940,6 @@ class Ui_MainWindow(object):
         self.Split_Title.setFont(font)
         self.Split_Title.setStyleSheet("QLabel {\n"
 "    color: rgb(0, 0, 0);\n"
-"    padding-left:6px;\n"
 "}")
         self.Split_Title.setObjectName("Split_Title")
         self.verticalLayout_12.addWidget(self.Split_Title)
@@ -2067,7 +2061,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_18.addLayout(self.horizontalLayout_16)
         self.verticalLayout_12.addLayout(self.horizontalLayout_18)
         self.horizontalLayout_97 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_97.setSpacing(0)
+        self.horizontalLayout_97.setSpacing(1)
         self.horizontalLayout_97.setObjectName("horizontalLayout_97")
         self.frame_47 = QtWidgets.QFrame(self.verticalWidget_3)
         self.frame_47.setStyleSheet("")
@@ -2285,7 +2279,6 @@ class Ui_MainWindow(object):
         self.LeafAi_Title.setFont(font)
         self.LeafAi_Title.setStyleSheet("QLabel {\n"
 "    color: rgb(0, 0, 0);\n"
-"    padding-left:6px;\n"
 "}")
         self.LeafAi_Title.setObjectName("LeafAi_Title")
         self.verticalLayout_104.addWidget(self.LeafAi_Title)
@@ -2295,7 +2288,7 @@ class Ui_MainWindow(object):
         self.frame_60.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_60.setObjectName("frame_60")
         self.verticalLayout_119 = QtWidgets.QVBoxLayout(self.frame_60)
-        self.verticalLayout_119.setContentsMargins(0, 6, 0, 0)
+        self.verticalLayout_119.setContentsMargins(-1, 6, -1, -1)
         self.verticalLayout_119.setSpacing(12)
         self.verticalLayout_119.setObjectName("verticalLayout_119")
         self.frame_61 = QtWidgets.QFrame(self.frame_60)
@@ -2320,7 +2313,7 @@ class Ui_MainWindow(object):
         self.frame_59.setObjectName("frame_59")
         self.horizontalLayout_124 = QtWidgets.QHBoxLayout(self.frame_59)
         self.horizontalLayout_124.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout_124.setSpacing(6)
+        self.horizontalLayout_124.setSpacing(2)
         self.horizontalLayout_124.setObjectName("horizontalLayout_124")
         self.take_over = QtWidgets.QFrame(self.frame_59)
         self.take_over.setStyleSheet("background:rgb(255, 255, 255);\n"
@@ -2350,7 +2343,7 @@ class Ui_MainWindow(object):
 "    color: rgb(0, 0, 0);\n"
 "    border: none;\n"
 "    padding: 2px;\n"
-"    font-size: 18px;\n"
+"    font-size: 16px;\n"
 "}\n"
 "\n"
 "QLineEdit::placeholder {\n"
@@ -2459,7 +2452,7 @@ class Ui_MainWindow(object):
 "border-radius: 2px;")
         self.Ai_move.setObjectName("Ai_move")
         self.horizontalLayout_19 = QtWidgets.QHBoxLayout(self.Ai_move)
-        self.horizontalLayout_19.setContentsMargins(4, 0, 4, 0)
+        self.horizontalLayout_19.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_19.setSpacing(2)
         self.horizontalLayout_19.setObjectName("horizontalLayout_19")
         self.label_13 = QtWidgets.QLabel(self.Ai_move)
@@ -2509,7 +2502,7 @@ class Ui_MainWindow(object):
         self.Ai_model.setObjectName("Ai_model")
         self.horizontalLayout_14 = QtWidgets.QHBoxLayout(self.Ai_model)
         self.horizontalLayout_14.setContentsMargins(4, 0, 4, 0)
-        self.horizontalLayout_14.setSpacing(4)
+        self.horizontalLayout_14.setSpacing(2)
         self.horizontalLayout_14.setObjectName("horizontalLayout_14")
         self.label_14 = QtWidgets.QLabel(self.Ai_model)
         font = QtGui.QFont()
@@ -2522,7 +2515,7 @@ class Ui_MainWindow(object):
         self.label_14.setObjectName("label_14")
         self.horizontalLayout_14.addWidget(self.label_14)
         self.comboBox_AiLmodel = QtWidgets.QComboBox(self.Ai_model)
-        self.comboBox_AiLmodel.setMinimumSize(QtCore.QSize(71, 0))
+        self.comboBox_AiLmodel.setMinimumSize(QtCore.QSize(76, 0))
         self.comboBox_AiLmodel.setMaximumSize(QtCore.QSize(110, 16777215))
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
@@ -2533,7 +2526,7 @@ class Ui_MainWindow(object):
 "    border: 1px solid rgb(87, 78, 209);\n"
 "    border-radius: 4px;\n"
 "    color: rgb(0, 0, 0);\n"
-"    font-size: 16px;\n"
+"    font-size: 15px;\n"
 "    padding-right: 0;\n"
 "    text-align: center;\n"
 "    padding-left: 2px;\n"
@@ -2645,7 +2638,6 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.addLayout(self.horizontalLayout_150)
         self.verticalLayout_121.addWidget(self.widget_110)
         self.verticalLayout_8 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_8.setSpacing(9)
         self.verticalLayout_8.setObjectName("verticalLayout_8")
         spacerItem12 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout_8.addItem(spacerItem12)
@@ -2690,13 +2682,13 @@ class Ui_MainWindow(object):
         self.label_5.setText(_translate("MainWindow", "2024年12月12日"))
         self.label_6.setText(_translate("MainWindow", "当前版本过期日期"))
         self.base_pushButton.setText(_translate("MainWindow", "标准会员版"))
-        self.label_8.setText(_translate("MainWindow", "限时特惠:￥9.9/月"))
+        self.label_8.setText(_translate("MainWindow", "限时特惠：￥9.9/月"))
         self.label_84.setText(_translate("MainWindow", "解锁自动化等基础功能"))
         self.Ai_pushButton.setText(_translate("MainWindow", "高级会员版"))
-        self.label_85.setText(_translate("MainWindow", "Ai畅享:￥17.9/月"))
+        self.label_85.setText(_translate("MainWindow", "Ai畅享：￥17.9/月"))
         self.label_86.setText(_translate("MainWindow", "解锁自动化+Ai接管"))
         self.vip_pushButton.setText(_translate("MainWindow", "至尊超级会员版"))
-        self.label_87.setText(_translate("MainWindow", "至尊超会:￥18.9/月"))
+        self.label_87.setText(_translate("MainWindow", "VIP至尊：￥18.9/月"))
         self.label_88.setText(_translate("MainWindow", "尊享全功能无限制使用"))
         self.label_63.setText(_translate("MainWindow", "可用率"))
         self.label_64.setText(_translate("MainWindow", "5%"))
@@ -2715,19 +2707,19 @@ class Ui_MainWindow(object):
 "</style></head><body style=\" font-family:\'微软雅黑 Light\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:14pt; font-weight:696;\">欢迎使用枫叶信息自动化Win7版</span></p>\n"
 "<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Microsoft YaHei UI\';\"><br /></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:12pt;\">尊敬的用户，欢迎使用枫叶信息自动化Win7特制版！</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:12pt;\">尊敬的用户，欢迎使用枫叶信息自动化系统！</span></p>\n"
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:12pt;\">      我们很高兴为您提供一个高效、智能的工作平台，旨在简化您的日常工作流程，提升工作效率。</span></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:12pt;\">      Win7版本现已停止提供支持服务，如需使用更多功能请升级到正式版。</span></p></body></html>"))
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:12pt;\">      当前为Windows7特制版，如需体验完整功能请升级。</span></p></body></html>"))
         self.welcome_label.setText(_translate("MainWindow", "欢迎使用LeafAuto"))
-        self.label_12.setText(_translate("MainWindow", "欢迎使用枫叶信息自动化（LeafAuto）"))
+        self.label_12.setText(_translate("MainWindow", "欢迎使用枫叶信息自动化(LeafAuto)"))
         self.label_11.setText(_translate("MainWindow", "LeafAuto © 2025 Yangshengzhou All Rights Reserved"))
-        self.label_75.setText(_translate("MainWindow", "等级"))
+        self.label_75.setText(_translate("MainWindow", "会员等级"))
         self.label_76.setText(_translate("MainWindow", "Null"))
         self.label_77.setText(_translate("MainWindow", "提示音"))
         self.label_78.setText(_translate("MainWindow", "OFF"))
-        self.label_79.setText(_translate("MainWindow", "语言"))
+        self.label_79.setText(_translate("MainWindow", "微信语言"))
         self.label_80.setText(_translate("MainWindow", "CN"))
-        self.label_81.setText(_translate("MainWindow", "版本"))
+        self.label_81.setText(_translate("MainWindow", "枫叶版本"))
         self.label_82.setText(_translate("MainWindow", "Win7"))
         self.AUTO_Title.setText(_translate("MainWindow", "AUTO"))
         self.label_3.setText(_translate("MainWindow", "消息内容"))
@@ -2748,7 +2740,7 @@ class Ui_MainWindow(object):
         self.log_textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'微软雅黑\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:\'微软雅黑\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Microsoft YaHei UI\'; font-size:12pt;\"><br /></p></body></html>"))
         self.label_119.setText(_translate("MainWindow", "LeafAuto © 2025 Yangshengzhou.All Rights Reserved"))
         self.start_pushButton.setText(_translate("MainWindow", "开始执行"))
