@@ -10,6 +10,7 @@ from PyQt5.QtCore import QThread, pyqtSignal
 
 from common import log, get_current_time
 
+
 # self.parent.update_wx()
 
 class AiWorkerThread(QThread):
