@@ -1697,7 +1697,7 @@ class Ui_MainWindow(object):
         self.label_113 = QtWidgets.QLabel(self.widget_64)
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
-        font.setPointSize(12)
+        font.setPointSize(11)
         font.setBold(False)
         font.setWeight(50)
         self.label_113.setFont(font)
@@ -1790,7 +1790,7 @@ class Ui_MainWindow(object):
         self.log_textEdit = QtWidgets.QTextEdit(self.frame_35)
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
-        font.setPointSize(12)
+        font.setPointSize(11)
         self.log_textEdit.setFont(font)
         self.log_textEdit.viewport().setProperty("cursor", QtGui.QCursor(QtCore.Qt.IBeamCursor))
         self.log_textEdit.setFocusPolicy(QtCore.Qt.NoFocus)
@@ -2598,7 +2598,7 @@ class Ui_MainWindow(object):
         self.takeOverTime_label.setMaximumSize(QtCore.QSize(1677, 162))
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
-        font.setPointSize(88)
+        font.setPointSize(78)
         self.takeOverTime_label.setFont(font)
         self.takeOverTime_label.setStyleSheet("QLabel {\n"
 "    color: rgb(0, 0, 0);\n"
@@ -2685,7 +2685,7 @@ class Ui_MainWindow(object):
         item = self.left_listWidget.item(3)
         item.setText(_translate("MainWindow", "Ai接管"))
         self.left_listWidget.setSortingEnabled(__sortingEnabled)
-        self.leafAuto_Title.setText(_translate("MainWindow", "LeafAUTO"))
+        self.leafAuto_Title.setText(_translate("MainWindow", "LeafAUTO-Win7"))
         self.Free_pushButton.setText(_translate("MainWindow", "正在使用免费版"))
         self.label_5.setText(_translate("MainWindow", "2024年12月12日"))
         self.label_6.setText(_translate("MainWindow", "当前版本过期日期"))
@@ -2713,7 +2713,7 @@ class Ui_MainWindow(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'微软雅黑 Light\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:14pt; font-weight:696;\">欢迎使用枫叶信息自动化系统</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:14pt; font-weight:696;\">欢迎使用枫叶信息自动化Win7版</span></p>\n"
 "<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Microsoft YaHei UI\';\"><br /></p>\n"
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:12pt;\">尊敬的用户，欢迎使用枫叶信息自动化Win7特制版！</span></p>\n"
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:12pt;\">      我们很高兴为您提供一个高效、智能的工作平台，旨在简化您的日常工作流程，提升工作效率。</span></p>\n"
@@ -2721,7 +2721,7 @@ class Ui_MainWindow(object):
         self.welcome_label.setText(_translate("MainWindow", "欢迎使用LeafAuto"))
         self.label_12.setText(_translate("MainWindow", "欢迎使用枫叶信息自动化（LeafAuto）"))
         self.label_11.setText(_translate("MainWindow", "LeafAuto © 2025 Yangshengzhou All Rights Reserved"))
-        self.label_75.setText(_translate("MainWindow", "会员等级"))
+        self.label_75.setText(_translate("MainWindow", "等级"))
         self.label_76.setText(_translate("MainWindow", "Null"))
         self.label_77.setText(_translate("MainWindow", "提示音"))
         self.label_78.setText(_translate("MainWindow", "OFF"))
@@ -2748,8 +2748,8 @@ class Ui_MainWindow(object):
         self.log_textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'微软雅黑\'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Microsoft YaHei UI\';\"><br /></p></body></html>"))
+"</style></head><body style=\" font-family:\'微软雅黑\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Microsoft YaHei UI\'; font-size:12pt;\"><br /></p></body></html>"))
         self.label_119.setText(_translate("MainWindow", "LeafAuto © 2025 Yangshengzhou.All Rights Reserved"))
         self.start_pushButton.setText(_translate("MainWindow", "开始执行"))
         self.Split_Title.setText(_translate("MainWindow", "Smart Split"))

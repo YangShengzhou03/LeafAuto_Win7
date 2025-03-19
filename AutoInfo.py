@@ -415,18 +415,17 @@ class AutoInfo(QtWidgets.QWidget):
                 username = '3555844679@qq.com'
                 password = 'xtibpzrdwnppchhi'
 
-                subject = f"【枫叶】{task['time']}未能把信息发给{task['name']}"
+                subject = f"未在{task['time']}把信息发给{task['name']}"
                 body = (
-                    f"尊敬的用户：\n\n我们遗憾地通知您，在【{task['time']}】尝试将【{task['info']}】发给【{task['name']}】时，因故障未能成功。\n"
-                    "\n对此造成的不便，我们深表歉意。请检查您提供的信息是否准确无误，并确认接收者信息是否正确。\n"
-                    "\n若问题依旧，请联系我们的客户服务团队以获取进一步帮助。您可以通过以下方式联系我们：\n"
-                    "- 发送电子邮件至我们的支持邮箱；\n"
-                    "- 访问我们的官方网站或下载最新应用程序了解更多信息。\n"
-                    "\n我们将尽快解决此问题，并持续改进服务。对于由此给您带来的任何不便，再次表示歉意，并感谢您的理解与耐心。\n"
-                    f"\n祝好，\n枫叶信息服务保障团队\n{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())}"
+                    f"尊敬的用户：\n\n在【{task['time']}】尝试发送【{task['info']}】给【{task['name']}】时遇到问题。\n"
+                    "这可能是由于信息错误或接收方信息不正确导致，具体原因您可查阅日志内容。\n"
+                    "\n建议您检查并更正相关信息。若问题持续存在，请联系我们的技术人员。\n"
+                    "联系方式：\n- 邮件至支持邮箱 3555844679@qq.com；\n"
+                    "\n我们正在解决此问题，并致力于提升服务质量。\n感谢您的理解与支持。\n"
+                    f"\n枫叶信息服务保障团队\n{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())}"
                 )
 
-                receiver_name = '尊贵的枫叶用户朋友'
+                receiver_name = '枫叶信息自动'
 
                 message = MIMEText(body, 'plain', 'utf-8')
                 message['From'] = 'LeafAuto <3555844679@qq.com>'

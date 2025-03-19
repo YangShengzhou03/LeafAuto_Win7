@@ -21,8 +21,8 @@ class Ui_ActivitiesWindow(object):
         self.centralwidget = QtWidgets.QWidget(ActivitiesWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
-        self.verticalLayout.setContentsMargins(-1, -1, 9, -1)
-        self.verticalLayout.setSpacing(9)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName("verticalLayout")
         self.frame_Main = QtWidgets.QFrame(self.centralwidget)
         self.frame_Main.setStyleSheet("QFrame {\n"
@@ -48,7 +48,7 @@ class Ui_ActivitiesWindow(object):
         self.horizontalLayout_10.setObjectName("horizontalLayout_10")
         self.label_head_title = QtWidgets.QLabel(self.frame_Main)
         font = QtGui.QFont()
-        font.setFamily("黑体")
+        font.setFamily("微软雅黑")
         font.setPointSize(16)
         self.label_head_title.setFont(font)
         self.label_head_title.setStyleSheet("QLabel {\n"
@@ -60,7 +60,7 @@ class Ui_ActivitiesWindow(object):
         self.horizontalLayout_10.addWidget(self.label_head_title)
         self.label_identify = QtWidgets.QLabel(self.frame_Main)
         font = QtGui.QFont()
-        font.setFamily("黑体")
+        font.setFamily("微软雅黑")
         font.setPointSize(16)
         font.setBold(False)
         font.setWeight(50)
@@ -549,7 +549,7 @@ class Ui_ActivitiesWindow(object):
         self.horizontalLayout_2.addWidget(self.label_2)
         self.label_prices_2 = QtWidgets.QLabel(self.Frame_Right)
         font = QtGui.QFont()
-        font.setFamily("黑体")
+        font.setFamily("楷体")
         font.setPointSize(30)
         font.setBold(True)
         font.setWeight(75)
@@ -670,7 +670,7 @@ class Ui_ActivitiesWindow(object):
     def retranslateUi(self, ActivitiesWindow):
         _translate = QtCore.QCoreApplication.translate
         ActivitiesWindow.setWindowTitle(_translate("ActivitiesWindow", "MainWindow"))
-        self.label_head_title.setText(_translate("ActivitiesWindow", "Hi，"))
+        self.label_head_title.setText(_translate("ActivitiesWindow", "Hi,"))
         self.label_identify.setText(_translate("ActivitiesWindow", "123456"))
         self.pushButton_exchange.setText(_translate("ActivitiesWindow", "激活码兑换"))
         self.label_privilege.setText(_translate("ActivitiesWindow", "VIP尊享，开启您的至尊之旅，感受非凡体验"))

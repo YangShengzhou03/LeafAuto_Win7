@@ -31,10 +31,19 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <property name="spacing">
-     <number>9</number>
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
     </property>
     <property name="rightMargin">
-     <number>9</number>
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
     </property>
     <item>
      <widget class="QFrame" name="frame_Main">
@@ -78,7 +87,7 @@
           <widget class="QLabel" name="label_head_title">
            <property name="font">
             <font>
-             <family>黑体</family>
+             <family>微软雅黑</family>
              <pointsize>16</pointsize>
             </font>
            </property>
@@ -90,7 +99,7 @@
 }</string>
            </property>
            <property name="text">
-            <string>Hi，</string>
+            <string>Hi,</string>
            </property>
           </widget>
          </item>
@@ -98,7 +107,7 @@
           <widget class="QLabel" name="label_identify">
            <property name="font">
             <font>
-             <family>黑体</family>
+             <family>微软雅黑</family>
              <pointsize>16</pointsize>
              <weight>50</weight>
              <bold>false</bold>
@@ -1031,7 +1040,7 @@ color: rgb(135, 135, 135);</string>
                <widget class="QLabel" name="label_prices_2">
                 <property name="font">
                  <font>
-                  <family>黑体</family>
+                  <family>楷体</family>
                   <pointsize>30</pointsize>
                   <weight>75</weight>
                   <bold>true</bold>
