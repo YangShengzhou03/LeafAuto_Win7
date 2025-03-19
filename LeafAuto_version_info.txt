@@ -1,7 +1,7 @@
 VSVersionInfo(
   ffi=FixedFileInfo(
-    filevers=(4, 3, 9, 0),
-    prodvers=(4, 3, 9, 0),
+    filevers=(4, 3, 9, 1),
+    prodvers=(4, 3, 9, 1),
     mask=0x3f,
     flags=0x0,
     OS=0x4,
@@ -17,12 +17,12 @@ VSVersionInfo(
           [
             StringStruct('CompanyName', 'Yangshengzhou'),
             StringStruct('FileDescription', 'LeafAuto_Win7'),
-            StringStruct('FileVersion', '4.3.9.0'),
+            StringStruct('FileVersion', '4.3.9.1'),
             StringStruct('InternalName', 'LeafAuto_Win7'),
             StringStruct('LegalCopyright', 'Copyright © 2025 YangShengzhou 版权所有'),
             StringStruct('OriginalFilename', 'LeafAuto_Win7.exe'),
             StringStruct('ProductName', 'LeafAuto_Win7'),
-            StringStruct('ProductVersion', '4.3.9.0')
+            StringStruct('ProductVersion', '4.3.9.1')
           ]
         )
       ]
