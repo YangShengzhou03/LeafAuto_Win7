@@ -473,7 +473,7 @@ border-radius:30px
 }</string>
                      </property>
                      <property name="text">
-                      <string>关闭程序时隐藏到系统托盘</string>
+                      <string>关闭时隐藏到系统托盘</string>
                      </property>
                     </widget>
                    </item>
@@ -578,7 +578,7 @@ QCheckBox::indicator:checked {
 }</string>
                      </property>
                      <property name="text">
-                      <string>信息发送出错时播放提示音</string>
+                      <string>发送出错时播放提示音</string>
                      </property>
                     </widget>
                    </item>
@@ -725,7 +725,7 @@ border:none;</string>
 }</string>
                      </property>
                      <property name="text">
-                      <string>全局使用网络授时（会员专享）</string>
+                      <string>使用网络授时</string>
                      </property>
                     </widget>
                    </item>
@@ -827,7 +827,7 @@ QCheckBox::indicator:checked {
 }</string>
                      </property>
                      <property name="text">
-                      <string>启动时自动检查更新</string>
+                      <string>自动检查更新</string>
                      </property>
                     </widget>
                    </item>
@@ -923,7 +923,7 @@ QCheckBox::indicator:checked {
 }</string>
                      </property>
                      <property name="text">
-                      <string>信息出错时发送邮件提醒</string>
+                      <string>发送出错时邮件提醒</string>
                      </property>
                     </widget>
                    </item>
@@ -1125,7 +1125,7 @@ QCheckBox::indicator:checked {
 }</string>
                      </property>
                      <property name="text">
-                      <string>PC客户端微信语言</string>
+                      <string>微信客户端语言</string>
                      </property>
                     </widget>
                    </item>
@@ -1286,7 +1286,7 @@ QSpinBox:focus {
 }</string>
                      </property>
                      <property name="text">
-                      <string>任务出错时提示音</string>
+                      <string>出错时提示音</string>
                      </property>
                     </widget>
                    </item>
@@ -1382,7 +1382,7 @@ QComboBox QAbstractItemView {
 }</string>
                      </property>
                      <property name="text">
-                      <string>一键清除缓存数据</string>
+                      <string>清理缓存数据</string>
                      </property>
                     </widget>
                    </item>

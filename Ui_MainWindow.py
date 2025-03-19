@@ -165,7 +165,7 @@ class Ui_MainWindow(object):
         self.rightHead_frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.rightHead_frame.setObjectName("rightHead_frame")
         self.horizontalLayout_33 = QtWidgets.QHBoxLayout(self.rightHead_frame)
-        self.horizontalLayout_33.setContentsMargins(9, 0, 4, 0)
+        self.horizontalLayout_33.setContentsMargins(9, 0, 9, 0)
         self.horizontalLayout_33.setSpacing(9)
         self.horizontalLayout_33.setObjectName("horizontalLayout_33")
         spacerItem2 = QtWidgets.QSpacerItem(761, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
