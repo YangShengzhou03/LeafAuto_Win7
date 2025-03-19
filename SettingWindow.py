@@ -53,9 +53,9 @@ class SettingWindow(QtWidgets.QMainWindow, Ui_SettingWindow):
                 os.remove(file)
                 cleaned_any = True
         if not cleaned_any:
-            QtWidgets.QMessageBox.warning(self, "无需清理", "很干净哦，无需清理。")
+            QtWidgets.QMessageBox.warning(self, "无需清理", "枫叶已经很干净咯，无需进行清理。")
         else:
-            QtWidgets.QMessageBox.information(self, "清理完成", "缓存数据清理完成。")
+            QtWidgets.QMessageBox.information(self, "清理完成", "缓存数据已成功清理完毕。")
             sys.exit(0)
 
     def select_email(self, state):
